@@ -97,7 +97,7 @@ public class Task {
 
     // читаем входные данные из файла
     private static int[][] getInput() throws IOException {
-        BufferedReader bufferedReader = Files.newBufferedReader(Paths.get("D:/input.txt"));
+        BufferedReader bufferedReader = Files.newBufferedReader(Paths.get("C:\\Users\\ame\\myTests\\ConeTestTask\\src\\Cone\\input2.txt"));
         int[][] arrayOfArrays = new int[12][4];
         int i = 0;
         while (bufferedReader.ready()) {
