@@ -34,9 +34,10 @@ object ScalaTask extends App {
       println("i = " + i + " stack size: " + stack.length)
       if (stack.contains(i)) {
         if (stack.length == 12) {
+          println(stack)
           val ints = ArrayBuffer[Array[Int]]()
           for (j <- 0 until 12) {
-            ints(j) = input(stack(j));
+            ints(j) = input(stack(j))
           }
           visualiseSimple(ints)
           println("========")
