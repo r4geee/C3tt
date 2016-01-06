@@ -1,18 +1,14 @@
 import scala.collection.mutable.ArrayBuffer
-import scala.io.Source
 
-def getInput: ArrayBuffer[Array[Int]] = {
-  val source = Source.fromFile("C:\\Users\\ame\\myTests\\ConeTestTask\\src\\Cone\\input.txt")
-  val lines = source.getLines.toArray
-  val ints = ArrayBuffer[Array[Int]]()
-  for (line <- lines) {
-    val values = line.split(" ").map(_.toInt)
-    ints += values
-  }
-  ints
-}
+var b = ArrayBuffer[Int]()
 
-var input = getInput
+b += 1
+b += 3
 
-input(1)
-input(1)(2)
+def add(arg: ArrayBuffer[Int]) = arg += 2
+def drop(arg: ArrayBuffer[Int]) = arg.takeRight(1)
+
+add(b)
+b
+b = drop(b)
+b
