@@ -28,6 +28,7 @@ object ScalaTask extends App {
       val values = line.split(" ").map(_.toInt)
       ints += values
     }
+    source.close()
     ints
   }
 
